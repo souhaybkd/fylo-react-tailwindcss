@@ -28,12 +28,12 @@ const PeopleReviews = [
 const Reviews = () => {
   return (
     <section className=''>
-      <ul className='flex sm:flex-row flex-col justify-center items-center w-[100vw] bg-primary pt-[100px]'>
+      <ul className='flex sm:flex-row flex-col justify-center items-center w-[100vw] bg-primary pt-[100px] font-opensans'>
         {PeopleReviews.map((review,index) => (
           <li key={review.id} className='relative' >
-            {index == 0 &&<img src={bgQuotes} className='absolute sm:top-0 top-[-20px] sm:left-5 left-20 z-[0]'/>}
-            <div className='z-[1] relative sm:max-w-[350px] w-[80%] bg-dimBlue px-5 py-8 flex flex-col sm:m-8 mx-auto my-4 text-white rounded-md'>
-              <p className='text-[12px font-[400] text-left'>{review.text}</p>
+            {index == 0 &&<img src={bgQuotes} className='absolute sm:top-[-2rem] top-[-20px] sm:left-[1.25rem] left-20 z-[0]'/>}
+            <div className='z-[1] relative sm:max-w-[400px] w-[80%] bg-dimBlue px-5 py-8 flex flex-col sm:m-auto mx-auto my-4 text-white rounded-md'>
+              <p className='text-[14px] font-[400] text-left'>{review.text}</p>
               <div className='flex pt-5'>
                 <img src={review.reviewerPhoto} className='w-[30px] h-[30px] rounded-full' />
                 <div className=' text-left pl-4'>

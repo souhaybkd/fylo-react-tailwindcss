@@ -1,5 +1,5 @@
 import React from 'react'
-import { iconAccesAnywere , iconSecurity , iconCollaboration , iconAnyFilefrom } from '../images'
+import { iconAccesAnywere , iconSecurity , iconCollaboration , iconAnyFilefrom  } from '../images'
 
 
 const FeaturesData =[
@@ -30,13 +30,13 @@ const FeaturesData =[
 ]
 const Features = () => {
   return (
-    <section className='flex justify-center items-centre w-[100vw] bg-primary py-[80px]'>
-      <ul className='grid  ss:grid-cols-2 gap-x-[100px] ss:gap-y-[30px] gap-y-[60px] justify-evenly items-centre   '>
+    <section className='  flex justify-center items-centre w-[100vw] bg-primary pb-[80px]'>
+      <ul className=' grid  ss:grid-cols-2 gap-x-[100px] ss:gap-y-[30px] gap-y-[60px] justify-evenly items-centre   '>
       {FeaturesData.map((feature)=>(
         <li key={feature.id} className='flex flex-col max-w-[300px] items-center '>
           <img src={feature.icon} alt={feature.icon} className='w-[70px] h-[70px] object-contain'/>
-          <h3 className='text-white ss:text-[16px] text-[18px] font-[700] py-4'>{feature.name}</h3>
-          <p className='text-white ss:text-[12px] text-[14px] font-[400]'>{feature.description}</p>
+          <h3 className='text-white ss:text-[16px] text-[18px] font-[700] font-raleway py-4'>{feature.name}</h3>
+          <p className='text-white ss:text-[12px] text-[14px] font-[400] font-opensans'>{feature.description}</p>
         </li>
       ))}
       </ul>
